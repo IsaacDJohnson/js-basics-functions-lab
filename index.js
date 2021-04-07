@@ -14,18 +14,18 @@ function calculatesFarePrice(start, destination) {
       const travel = (Math.abs (start - destination) * 264)
       const price = 0.02
         
-        if (travel < 400)
+        if (travel < 400) {
         return price * 0
-        
-        else if (2000 > travel > 400)
-        return 2.56
-       
-        else if (2000 < travel < 2500)
+        }
+        else if (400 < travel < 1999) {
+        return (2.56)
+        }
+        else if (2000 < travel < 2500) {
         return 25
-        
-        else if (2500 < travel)
+        }
+        else if (2500 < travel){
         return "cannot travel that far"
-
+        }
 }
 
 
